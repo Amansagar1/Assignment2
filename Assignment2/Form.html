@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Form</title>
+</head>
+<body>
+    <!-- 1.Create a form and need to fulfil the following points
+2.There should be four input field and a submit button
+3.Username, email, password and Date of birth(date)
+4.All four fields should be mandatory
+5.All fields should have placeholder
+6.Username should not be exceeded more than 15 characters and  should accept at least 6 characters
+7.Date of Birth field should not accept the date before   31-Dec-2010 and after 31-Dec-2023 -->
+,<h1>Personal Information Form</h1>
+<Fieldset>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    Username :-
+                </td>
+                <td>
+                    <input type="Text" placeholder="Name" minlength="6" maxlength="15" name="Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Passwoard :-
+                </td>
+                <td>
+                    <input type="Password" placeholder="Passwoard" min="6" max="15" name="Password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Date Of Birth :- 
+                </td>
+                <td>
+                    <input type="date" placeholder="Date Of Birth" min="2010-12-31" max="2023-12-31" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email :- 
+                </td>
+                <td>
+                    <input type="Email" placeholder="example@email.com" minlength="6" maxlength="15" name="Email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gender :-
+                </td>
+                <td>
+                    <input type="radio"  placeholder="Gender"  name="Gender">Males
+                    <input type="radio"  placeholder="Gender"  name="Gender">Females
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Education Qualification :- 
+                </td>
+                <td>
+                    <select>
+                        <option>Select option</option>
+                        <option>10+2</option>
+                        <option>Graduation</option>
+                        <option>Postgraduation</option>
+                        <option>PHD</option>
+                    </select>
+                </td>
+            <tr>
+                <td>
+                    <input type="Submit" placeholder="submit" value="Submit">
+                    <input type="Reset" placeholder="Reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</Fieldset>
+</body>
+</html>
